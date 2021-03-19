@@ -1,5 +1,7 @@
 const { Client } = require('whatsapp-web.js');
 const qrcode = require('qrcode-terminal');
+const request = require('request')
+let url = 'https://vip.bitcoin.co.id/api/btc_idr/ticker'
 const client = new Client();
 
 client.on('qr', (qr) => {
